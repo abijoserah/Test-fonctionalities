@@ -1,6 +1,7 @@
 import './App.css'
 import { songs as initialSongs, type Song } from "../data"
 import { useState } from 'react'
+import { SongCard } from './SongCard'
 
 // {"id": 1, "title":"Ed Sheeran"}
 // {"id": 2, "title":"Justin Bieber"}
@@ -47,15 +48,7 @@ function App() {
         {search ? <button onClick={() => (setSearch(""))}>Reset</button> : null}
       </div>
       <ul className='text-start flex flex-col gap-1 text-xs'>
-        {filteredSongs.map((song) => (<li className={`rounded-sm ${song.deleted ? "bg-red-300" : "bg-slate-100"} px-1 py-2`}>
-
-          <img src={song.cover} className='w-full h-auto max-w-16 rounded-sm' />
-          <span>{song.title}</span>
-          <div className='items-end'>
-
-            <button onClick={() => handleDeleteSong(song.id)}>X</button>
-          </div>
-        </li>))}
+        {filteredSongs.map((song) => (<SongCard song={song} handleDeleteSong={handleDeleteSong} />))}
       </ul>
     </div>
   )
