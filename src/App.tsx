@@ -23,7 +23,7 @@ function App() {
       cover: song.cover,
       link: song.link,
       year: song.year,
-      deleted: songId === song.id ? true : song.deleted
+      deleted: songId === song.id ? !song.deleted : song.deleted
     }
     ))
 
