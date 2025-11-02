@@ -1,0 +1,78 @@
+
+export type Song = {
+  id: string;
+  title: string;
+  cover: string;
+  link: string;
+  category: string;
+  year: number;
+}
+
+// Sample data for your type Song
+// You can paste this into a songs.ts and import it.
+export const songs: Song[] = [
+  { id: "kJQP7kiw5Fk", title: "Despacito — Luis Fonsi ft. Daddy Yankee", cover: "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg", link: "https://www.youtube.com/watch?v=kJQP7kiw5Fk", category: "Energetic", year: 2017 },
+{ id: "4NRXx6U8ABQ", title: "Blinding Lights — The Weeknd", cover: "https://i.ytimg.com/vi/4NRXx6U8ABQ/hqdefault.jpg", link: "https://www.youtube.com/watch?v=4NRXx6U8ABQ", category: "Energetic", year: 2019 },
+{ id: "OPf0YbXqDm0", title: "Uptown Funk — Mark Ronson ft. Bruno Mars", cover: "https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg", link: "https://www.youtube.com/watch?v=OPf0YbXqDm0", category: "Energetic", year: 2014 },
+{ id: "7wtfhZwyrcc", title: "Believer — Imagine Dragons", cover: "https://i.ytimg.com/vi/7wtfhZwyrcc/hqdefault.jpg", link: "https://www.youtube.com/watch?v=7wtfhZwyrcc", category: "Energetic", year: 2017 },
+{ id: "kTJczUoc26U", title: "STAY — The Kid LAROI & Justin Bieber", cover: "https://i.ytimg.com/vi/kTJczUoc26U/hqdefault.jpg", link: "https://www.youtube.com/watch?v=kTJczUoc26U", category: "Energetic", year: 2021 },
+{ id: "YqeW9_5kURI", title: "Lean On — Major Lazer & DJ Snake ft. MØ", cover: "https://i.ytimg.com/vi/YqeW9_5kURI/hqdefault.jpg", link: "https://www.youtube.com/watch?v=YqeW9_5kURI", category: "Energetic", year: 2015 },
+{ id: "DyDfgMOUjCI", title: "bad guy — Billie Eilish", cover: "https://i.ytimg.com/vi/DyDfgMOUjCI/hqdefault.jpg", link: "https://www.youtube.com/watch?v=DyDfgMOUjCI", category: "Energetic", year: 2019 },
+{ id: "CevxZvSJLk8", title: "Roar — Katy Perry", cover: "https://i.ytimg.com/vi/CevxZvSJLk8/hqdefault.jpg", link: "https://www.youtube.com/watch?v=CevxZvSJLk8", category: "Energetic", year: 2013 },
+{ id: "hT_nvWreIhg", title: "Counting Stars — OneRepublic", cover: "https://i.ytimg.com/vi/hT_nvWreIhg/hqdefault.jpg", link: "https://www.youtube.com/watch?v=hT_nvWreIhg", category: "Energetic", year: 2013 },
+{ id: "SlPhMPnQ58k", title: "High Hopes — Panic! At The Disco", cover: "https://i.ytimg.com/vi/SlPhMPnQ58k/hqdefault.jpg", link: "https://www.youtube.com/watch?v=SlPhMPnQ58k", category: "Energetic", year: 2018 },
+{ id: "VbfpW0pbvaU", title: "Don't Start Now — Dua Lipa", cover: "https://i.ytimg.com/vi/VbfpW0pbvaU/hqdefault.jpg", link: "https://www.youtube.com/watch?v=VbfpW0pbvaU", category: "Energetic", year: 2019 },
+{ id: "RqtUI4XfhMM", title: "Bloody Samaritan — Ayra Starr", cover: "https://i.ytimg.com/vi/RqtUI4XfhMM/hqdefault.jpg", link: "https://www.youtube.com/watch?v=RqtUI4XfhMM", category: "Energetic", year: 2021 },
+{ id: "CuklIb9d3fI", title: "INDUSTRY BABY — Lil Nas X & Jack Harlow", cover: "https://i.ytimg.com/vi/CuklIb9d3fI/hqdefault.jpg", link: "https://www.youtube.com/watch?v=CuklIb9d3fI", category: "Energetic", year: 2021 },
+{ id: "sr--GVIoluU", title: "Bande organisée — Jul, SCH, Kofs, Naps...", cover: "https://i.ytimg.com/vi/sr--GVIoluU/hqdefault.jpg", link: "https://www.youtube.com/watch?v=sr--GVIoluU", category: "Energetic", year: 2020 },
+{ id: "en2D_5TzXCA", title: "Calm Down — Rema", cover: "https://i.ytimg.com/vi/en2D_5TzXCA/hqdefault.jpg", link: "https://www.youtube.com/watch?v=en2D_5TzXCA", category: "Energetic", year: 2022 },
+{ id: "q0hyYWKXF0Q", title: "Ça m’vénère — Ninho", cover: "https://i.ytimg.com/vi/q0hyYWKXF0Q/hqdefault.jpg", link: "https://www.youtube.com/watch?v=q0hyYWKXF0Q", category: "Energetic", year: 2023 },
+{ id: "JGwWNGJdvx8", title: "Shape of You — Ed Sheeran", cover: "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg", link: "https://www.youtube.com/watch?v=JGwWNGJdvx8", category: "Happy", year: 2017 },
+{ id: "HCjNJDNzw8Y", title: "Havana — Camila Cabello ft. Young Thug", cover: "https://i.ytimg.com/vi/HCjNJDNzw8Y/hqdefault.jpg", link: "https://www.youtube.com/watch?v=HCjNJDNzw8Y", category: "Happy", year: 2017 },
+{ id: "09R8_2nJtjg", title: "Sugar — Maroon 5", cover: "https://i.ytimg.com/vi/09R8_2nJtjg/hqdefault.jpg", link: "https://www.youtube.com/watch?v=09R8_2nJtjg", category: "Happy", year: 2015 },
+{ id: "nfWlot6h_JM", title: "Shake It Off — Taylor Swift", cover: "https://i.ytimg.com/vi/nfWlot6h_JM/hqdefault.jpg", link: "https://www.youtube.com/watch?v=nfWlot6h_JM", category: "Happy", year: 2014 },
+{ id: "y6Sxv-sUYtM", title: "Happy — Pharrell Williams", cover: "https://i.ytimg.com/vi/y6Sxv-sUYtM/hqdefault.jpg", link: "https://www.youtube.com/watch?v=y6Sxv-sUYtM", category: "Happy", year: 2013 },
+{ id: "2Vv-BfVoq4g", title: "Perfect — Ed Sheeran", cover: "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg", link: "https://www.youtube.com/watch?v=2Vv-BfVoq4g", category: "Happy", year: 2017 },
+{ id: "q0hyYWKXF0Q", title: "Tout va bien — Orelsan ft. Stromae", cover: "https://i.ytimg.com/vi/q0hyYWKXF0Q/hqdefault.jpg", link: "https://www.youtube.com/watch?v=q0hyYWKXF0Q", category: "Happy", year: 2017 },
+{ id: "pRpeEdMmmQ0", title: "Waka Waka — Shakira", cover: "https://i.ytimg.com/vi/pRpeEdMmmQ0/hqdefault.jpg", link: "https://www.youtube.com/watch?v=pRpeEdMmmQ0", category: "Happy", year: 2010 },
+{ id: "OPf0YbXqDm0", title: "Uptown Funk — Mark Ronson ft. Bruno Mars", cover: "https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg", link: "https://www.youtube.com/watch?v=OPf0YbXqDm0", category: "Happy", year: 2014 },
+{ id: "ru0K8uYEZWw", title: "Can't Stop the Feeling! — Justin Timberlake", cover: "https://i.ytimg.com/vi/ru0K8uYEZWw/hqdefault.jpg", link: "https://www.youtube.com/watch?v=ru0K8uYEZWw", category: "Happy", year: 2016 },
+{ id: "VYOjWnS4cMY", title: "This is America — Childish Gambino", cover: "https://i.ytimg.com/vi/VYOjWnS4cMY/hqdefault.jpg", link: "https://www.youtube.com/watch?v=VYOjWnS4cMY", category: "Happy", year: 2018 },
+{ id: "kVpv8-5XWOI", title: "Hey, Soul Sister — Train", cover: "https://i.ytimg.com/vi/kVpv8-5XWOI/hqdefault.jpg", link: "https://www.youtube.com/watch?v=kVpv8-5XWOI", category: "Happy", year: 2010 },
+{ id: "y83x7MgzWOA", title: "I Don't Care — Ed Sheeran ft. Justin Bieber", cover: "https://i.ytimg.com/vi/y83x7MgzWOA/hqdefault.jpg", link: "https://www.youtube.com/watch?v=y83x7MgzWOA", category: "Happy", year: 2022 },
+{ id: "XR7Ev14vUh8", title: "Caro — Burna Boy", cover: "https://i.ytimg.com/vi/XR7Ev14vUh8/hqdefault.jpg", link: "https://www.youtube.com/watch?v=XR7Ev14vUh8", category: "Happy", year: 2019 },
+{ id: "7GElP4YdrBE", title: "Angela — Hatik", cover: "https://i.ytimg.com/vi/7GElP4YdrBE/hqdefault.jpg", link: "https://www.youtube.com/watch?v=7GElP4YdrBE", category: "Happy", year: 2020 },
+{ id: "psuRGfAaju4", title: "Call Me Maybe — Carly Rae Jepsen", cover: "https://i.ytimg.com/vi/psuRGfAaju4/hqdefault.jpg", link: "https://www.youtube.com/watch?v=psuRGfAaju4", category: "Happy", year: 2011 },
+{ id: "RgKAFK5djSk", title: "See You Again — Wiz Khalifa ft. Charlie Puth", cover: "https://i.ytimg.com/vi/RgKAFK5djSk/hqdefault.jpg", link: "https://www.youtube.com/watch?v=RgKAFK5djSk", category: "Sad", year: 2015 },
+{ id: "hLQl3WQQoQ0", title: "Someone Like You — Adele", cover: "https://i.ytimg.com/vi/hLQl3WQQoQ0/hqdefault.jpg", link: "https://www.youtube.com/watch?v=hLQl3WQQoQ0", category: "Sad", year: 2011 },
+{ id: "RBumgq5yVrA", title: "Let Her Go — Passenger", cover: "https://i.ytimg.com/vi/RBumgq5yVrA/hqdefault.jpg", link: "https://www.youtube.com/watch?v=RBumgq5yVrA", category: "Sad", year: 2012 },
+{ id: "rYEDA3JcQqw", title: "Rolling in the Deep — Adele", cover: "https://i.ytimg.com/vi/rYEDA3JcQqw/hqdefault.jpg", link: "https://www.youtube.com/watch?v=rYEDA3JcQqw", category: "Sad", year: 2010 },
+{ id: "60ItHLz5WEA", title: "Faded — Alan Walker", cover: "https://i.ytimg.com/vi/60ItHLz5WEA/hqdefault.jpg", link: "https://www.youtube.com/watch?v=60ItHLz5WEA", category: "Sad", year: 2015 },
+{ id: "tAGnKpE4NCI", title: "Nothing Else Matters — Metallica", cover: "https://i.ytimg.com/vi/tAGnKpE4NCI/hqdefault.jpg", link: "https://www.youtube.com/watch?v=tAGnKpE4NCI", category: "Sad", year: 1991 },
+{ id: "0put0_a--Ng", title: "All I Want — Kodaline", cover: "https://i.ytimg.com/vi/0put0_a--Ng/hqdefault.jpg", link: "https://www.youtube.com/watch?v=0put0_a--Ng", category: "Sad", year: 2013 },
+{ id: "hT_nvWreIhg", title: "Counting Stars — OneRepublic", cover: "https://i.ytimg.com/vi/hT_nvWreIhg/hqdefault.jpg", link: "https://www.youtube.com/watch?v=hT_nvWreIhg", category: "Sad", year: 2013 },
+{ id: "pB-5XG-DbAA", title: "Stay With Me — Sam Smith", cover: "https://i.ytimg.com/vi/pB-5XG-DbAA/hqdefault.jpg", link: "https://www.youtube.com/watch?v=pB-5XG-DbAA", category: "Sad", year: 2014 },
+{ id: "YykjpeuMNEk", title: "Cold Water — Major Lazer ft. Justin Bieber, MØ", cover: "https://i.ytimg.com/vi/YykjpeuMNEk/hqdefault.jpg", link: "https://www.youtube.com/watch?v=YykjpeuMNEk", category: "Sad", year: 2016 },
+{ id: "J_ub7Etch2U", title: "Too good at goodbyes — Sam Smith", cover: "https://i.ytimg.com/vi/J_ub7Etch2U/hqdefault.jpg", link: "https://www.youtube.com/watch?v=J_ub7Etch2U", category: "Sad", year: 1986 },
+{ id: "ioNng23DkIM", title: "Ghost — Justin Bieber", cover: "https://i.ytimg.com/vi/ioNng23DkIM/hqdefault.jpg", link: "https://www.youtube.com/watch?v=ioNng23DkIM", category: "Sad", year: 2021 },
+{ id: "ekzHIouo8Q4", title: "When I Was Your Man — Bruno Mars", cover: "https://i.ytimg.com/vi/ekzHIouo8Q4/hqdefault.jpg", link: "https://www.youtube.com/watch?v=ekzHIouo8Q4", category: "Sad", year: 2013 },
+{ id: "zABLecsR5UE", title: "Someone You Loved — Lewis Capaldi", cover: "https://i.ytimg.com/vi/zABLecsR5UE/hqdefault.jpg", link: "https://www.youtube.com/watch?v=zABLecsR5UE", category: "Sad", year: 2019 },
+{ id: "d_HlPboLRL8", title: "Runaway — AURORA", cover: "https://i.ytimg.com/vi/d_HlPboLRL8/hqdefault.jpg", link: "https://www.youtube.com/watch?v=d_HlPboLRL8", category: "Sad", year: 2015 },
+{ id: "k2qgadSvNyU", title: "Jealous — Labrinth", cover: "https://i.ytimg.com/vi/50VWOBi0VFs/hqdefault.jpg", link: "https://www.youtube.com/watch?v=50VWOBi0VFs", category: "Sad", year: 2014 },
+{ id: "2Vv-BfVoq4g", title: "Perfect — Ed Sheeran", cover: "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg", link: "https://www.youtube.com/watch?v=2Vv-BfVoq4g", category: "Chill", year: 2017 },
+{ id: "PT2_F-1esPk", title: "Closer — The Chainsmokers ft. Halsey", cover: "https://i.ytimg.com/vi/PT2_F-1esPk/hqdefault.jpg", link: "https://www.youtube.com/watch?v=PT2_F-1esPk", category: "Chill", year: 2016 },
+{ id: "aJOTlE1K90k", title: "Girls Like You — Maroon 5 ft. Cardi B", cover: "https://i.ytimg.com/vi/aJOTlE1K90k/hqdefault.jpg", link: "https://www.youtube.com/watch?v=aJOTlE1K90k", category: "Chill", year: 2018 },
+{ id: "ApXoWvfEYVU", title: "Sunflower — Post Malone & Swae Lee", cover: "https://i.ytimg.com/vi/ApXoWvfEYVU/hqdefault.jpg", link: "https://www.youtube.com/watch?v=ApXoWvfEYVU", category: "Chill", year: 2018 },
+{ id: "gOsM-DYAEhY", title: "Lovely — Billie Eilish & Khalid", cover: "https://i.ytimg.com/vi/gOsM-DYAEhY/hqdefault.jpg", link: "https://www.youtube.com/watch?v=gOsM-DYAEhY", category: "Chill", year: 2018 },
+{ id: "tQ0yjYUFKAE", title: "Peaches — Justin Bieber ft. Daniel Caesar, Giveon", cover: "https://i.ytimg.com/vi/tQ0yjYUFKAE/hqdefault.jpg", link: "https://www.youtube.com/watch?v=tQ0yjYUFKAE", category: "Chill", year: 2021 },
+{ id: "by3yRdlQvzs", title: "Location — Khalid", cover: "https://i.ytimg.com/vi/by3yRdlQvzs/hqdefault.jpg", link: "https://www.youtube.com/watch?v=by3yRdlQvzs", category: "Chill", year: 2016 },
+{ id: "hKgl5-lkT8U", title: "Best Part — Daniel Caesar ft. H.E.R.", cover: "https://i.ytimg.com/vi/hKgl5-lkT8U/hqdefault.jpg", link: "https://www.youtube.com/watch?v=hKgl5-lkT8U", category: "Chill", year: 2017 },
+{ id: "k2qgadSvNyU", title: "Levitating — Dua Lipa ft. DaBaby", cover: "https://i.ytimg.com/vi/k2qgadSvNyU/hqdefault.jpg", link: "https://www.youtube.com/watch?v=k2qgadSvNyU", category: "Chill", year: 2020 },
+{ id: "jipQpjUA_o8", title: "Essence — Wizkid ft. Tems", cover: "https://i.ytimg.com/vi/jipQpjUA_o8/hqdefault.jpg", link: "https://www.youtube.com/watch?v=jipQpjUA_o8", category: "Chill", year: 2021 },
+{ id: "B7xai5u_tnk", title: "Good Days — SZA", cover: "https://i.ytimg.com/vi/B7xai5u_tnk/hqdefault.jpg", link: "https://www.youtube.com/watch?v=B7xai5u_tnk", category: "Chill", year: 2020 },
+{ id: "gCYcHz2k5x0", title: "Summer — Calvin Harris", cover: "https://i.ytimg.com/vi/gCYcHz2k5x0/hqdefault.jpg", link: "https://www.youtube.com/watch?v=gCYcHz2k5x0", category: "Chill", year: 2014 },
+{ id: "RbWQV3OiRqA", title: "Leave The Door Open — Bruno Mars, Anderson .Paak", cover: "https://i.ytimg.com/vi/RbWQV3OiRqA/hqdefault.jpg", link: "https://www.youtube.com/watch?v=RbWQV3OiRqA", category: "Chill", year: 2021 },
+{ id: "cHHLHGNpCSA", title: "Get You — Daniel Caesar ft. Kali Uchis", cover: "https://i.ytimg.com/vi/cHHLHGNpCSA/hqdefault.jpg", link: "https://www.youtube.com/watch?v=cHHLHGNpCSA", category: "Chill", year: 2016 },
+{ id: "CwfoyVa980U", title: "How Long — Charlie Puth", cover: "https://i.ytimg.com/vi/CwfoyVa980U/hqdefault.jpg", link: "https://www.youtube.com/watch?v=CwfoyVa980U", category: "Chill", year: 2019 },
+{ id: "9DpejbEJ5Gs", title: "Running (To You) — Chiké ft. Simi", cover: "https://i.ytimg.com/vi/9DpejbEJ5Gs/hqdefault.jpg", link: "https://www.youtube.com/watch?v=9DpejbEJ5Gs", category: "Chill", year: 2021 },
+];
