@@ -6,12 +6,13 @@ export type Song = {
   link: string;
   category: string;
   year: number;
+  deleted?: boolean; // false
 }
 
 // Sample data for your type Song
 // You can paste this into a songs.ts and import it.
 export const songs: Song[] = [
-  { id: "kJQP7kiw5Fk", title: "Despacito — Luis Fonsi ft. Daddy Yankee", cover: "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg", link: "https://www.youtube.com/watch?v=kJQP7kiw5Fk", category: "Energetic", year: 2017 },
+  { id: "kJQP7kiw5Fk", deleted: true, title: "Despacito — Luis Fonsi ft. Daddy Yankee", cover: "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg", link: "https://www.youtube.com/watch?v=kJQP7kiw5Fk", category: "Energetic", year: 2017 },
 { id: "4NRXx6U8ABQ", title: "Blinding Lights — The Weeknd", cover: "https://i.ytimg.com/vi/4NRXx6U8ABQ/hqdefault.jpg", link: "https://www.youtube.com/watch?v=4NRXx6U8ABQ", category: "Energetic", year: 2019 },
 { id: "OPf0YbXqDm0", title: "Uptown Funk — Mark Ronson ft. Bruno Mars", cover: "https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg", link: "https://www.youtube.com/watch?v=OPf0YbXqDm0", category: "Energetic", year: 2014 },
 { id: "7wtfhZwyrcc", title: "Believer — Imagine Dragons", cover: "https://i.ytimg.com/vi/7wtfhZwyrcc/hqdefault.jpg", link: "https://www.youtube.com/watch?v=7wtfhZwyrcc", category: "Energetic", year: 2017 },
