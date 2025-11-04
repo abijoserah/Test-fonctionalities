@@ -8,7 +8,7 @@ export function SongList() {
     const filteredSongs = songs.filter((song) => (song.title.toLowerCase().includes(search.toLowerCase())))
 
     function handleDeleteSong(songId: string) {
-        const rebuiltSongs = songs.map((song): Song =>
+        const rebuildSongs = songs.map((song): Song =>
         ({
             id: song.id,
             title: song.title,
@@ -20,7 +20,7 @@ export function SongList() {
         }
         ))
 
-        setSongs(rebuiltSongs)
+        setSongs(rebuildSongs)
     }
 
 
