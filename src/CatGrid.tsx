@@ -6,7 +6,7 @@ interface CatGridprops {
 
 export function CatGrid({ cats }: CatGridprops) {
     return <div className="px-8 py-6">
-        <h1>Cat Grid</h1>
+        <h2>Cat Grid</h2>
         <div className="flex flex-col gap-3">
 
             {cats.map((cat) =>
